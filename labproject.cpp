@@ -170,7 +170,7 @@ int main() {
             cin >> roomNumber;
             cout << "Student " << studentName << " has been assigned to room " << roomNumber << "." << endl;
         } else if (hostelOption == 2) {
-            cout << "Available Rooms: \n Room 1 on first floor - 1 single bed available \n Room 9 - 2 single beds available \n Room 3 on first floor - Fully occupied" << endl;
+            cout << "Available Rooms:\nRoom 101 - 2 beds available\nRoom 002 - 1 bed available\nRoom 111 - Fully occupied" << endl;
         } else {
             cout << "Invalid option." << endl;
         }
