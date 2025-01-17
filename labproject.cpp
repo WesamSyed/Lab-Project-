@@ -13,10 +13,10 @@ int main() {
     string prog2 = "DPT";
     short seatsProg1 = 3;
     short seatsProg2 = 2;
-    float minCriteria1 = 75.0;
-    float minCriteria2 = 65.0;
+    float minimumCriteria1 = 88.9;
+    float minimumCriteria2 = 72.7;
 
-    cout << "=== University Admission System ===" << endl;
+    cout << "=== UOL Admission System ===" << endl;
     cout << "1. Admin Login" << endl;
     cout << "2. Student Application" << endl;
     cout << "3. Student Attendance System" << endl;
@@ -32,7 +32,8 @@ int main() {
 
         // Admin Login
 
-        string emailInput, passInput;
+        string emailInput;
+        string passInput;
 
         cout << "\n--- Admin Login ---" << endl;
         cout << "Enter Email: ";
@@ -42,8 +43,8 @@ int main() {
 
         if (emailInput == adminEmail && passInput == adminPass) {
             cout << "\nLogin Successful!" << endl;
-            cout << "Program 1: " << prog1 << " | Seats: " << seatsProg1 << " | Minimum Criteria: " << minCriteria1 << "%" << endl;
-            cout << "Program 2: " << prog2 << " | Seats: " << seatsProg2 << " | Minimum Criteria: " << minCriteria2 << "%" << endl;
+            cout << "Program 1: " << prog1 << " | Seats: " << seatsProg1 << " | Minimum Criteria: " << minimumCriteria1 << "%" << endl;
+            cout << "Program 2: " << prog2 << " | Seats: " << seatsProg2 << " | Minimum Criteria: " << minimumCriteria2 << "%" << endl;
         } else {
             cout << "\nInvalid credentials! Access denied." << endl;
         }
@@ -79,7 +80,7 @@ int main() {
         cin >> selectedProgram;
 
         if (selectedProgram == 1) {
-            if (seatsProg1 > 0 && percentage >= minCriteria1) {
+            if (seatsProg1 > 0 && percentage >= minimumCriteria1) {
                 cout << "\nCongratulations! You are selected for " << prog1 << "." << endl;
                 --seatsProg1;
 
@@ -90,7 +91,7 @@ int main() {
             }
 
         } else if (selectedProgram == 2) {
-            if (seatsProg2 > 0 && percentage >= minCriteria2) {
+            if (seatsProg2 > 0 && percentage >= minimumCriteria2) {
                 cout << "\nCongratulations! UOL is happy to announce that you are selected for " << prog2 << "." << endl;
                 --seatsProg2;
 
@@ -107,20 +108,20 @@ int main() {
 
         // Student University Attendance Management System
 
-        int attendanceOption;
+        int attendanceModule;
 
         cout << "\n--- UOL Student Attendance System ---" << endl;
         cout << "1. Mark Attendance" << endl;
         cout << "2. View UOL Student Attendance Record" << endl;
         cout << "Choose an option (1 or 2): ";
-        cin >> attendanceOption;
+        cin >> attendanceModule;
 
-        if (attendanceOption == 1) {
+        if (attendanceModule == 1) {
             string studentName;
             cout << "Enter the student's name: ";
             cin >> studentName;
             cout << "Attendance for " << studentName << " has been marked as present." << endl;
-        } else if (attendanceOption == 2) {
+        } else if (attendanceModule == 2) {
             cout << "Attendance Record:\n Wesam = Present\n Shamaim = Absent\n Meerab = Present \n Maryam = Present \n Faizan = Present\n Rehan = Leave \n Talha = Left the Uni \n Hamdan = Present \n Rida = Absent " << endl;
         } else {
             cout << "Invalid option." << endl;
@@ -130,20 +131,20 @@ int main() {
 
         // University Gym Management System
 
-        int gymOption;
+        int gymModule;
 
         cout << "\n--- UOL Gym Management System ---" << endl;
         cout << "1. Register a New Member" << endl;
         cout << "2. View UOL Gym Timings" << endl;
         cout << "Choose an option (1 or 2): ";
-        cin >> gymOption;
+        cin >> gymModule;
 
-        if (gymOption == 1) {
+        if (gymModule == 1) {
             string memberName;
             cout << "Enter the member's name: ";
             cin >> memberName;
             cout << "Member " << memberName << " has been successfully registered." << endl;
-        } else if (gymOption == 2) {
+        } else if (gymModule == 2) {
             cout << "UOL Gym Timings:\nMorning: 6 AM - 10 AM\nEvening: 4 PM - 9 PM" << endl;
         } else {
             cout << "Invalid option." << endl;
@@ -153,15 +154,15 @@ int main() {
 
         // University Hostel Management System
 
-        int hostelOption;
+        int hostelModule;
 
         cout << "\n--- UOL Hostel Management System ---" << endl;
         cout << "1. Assign Room to Student" << endl;
         cout << "2. Check Room Availability" << endl;
         cout << "Choose an option (1 or 2): ";
-        cin >> hostelOption;
+        cin >> hostelModule;
 
-        if (hostelOption == 1) {
+        if (hostelModule == 1) {
             string studentName;
             int roomNumber;
             cout << "Enter the student's name: ";
@@ -169,8 +170,8 @@ int main() {
             cout << "Enter the room number: ";
             cin >> roomNumber;
             cout << "Student " << studentName << " has been assigned to room " << roomNumber << "." << endl;
-        } else if (hostelOption == 2) {
-            cout << "Available Rooms:\nRoom 101 - 2 beds available\nRoom 002 - 1 bed available\nRoom 111 - Fully occupied" << endl;
+        } else if (hostelModule == 2) {
+            cout << "Available Rooms:\nRoom 101 - 2 beds available\nRoom 102 - 1 bed available\nRoom 103 - Fully occupied" << endl;
         } else {
             cout << "Invalid option." << endl;
         }
