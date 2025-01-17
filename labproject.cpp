@@ -106,7 +106,7 @@ int main() {
 
     } else if (userChoice == 3) { 
 
-        // Student University Attendance Management System
+        // Student University Attendance Management System Module
 
         int attendanceModule;
 
@@ -129,7 +129,7 @@ int main() {
 
     } else if (userChoice == 4) { 
 
-        // University Gym Management System
+        // University Gym Management System Module
 
         int gymModule;
 
@@ -152,7 +152,7 @@ int main() {
 
     } else if (userChoice == 5) { 
 
-        // University Hostel Management System
+        // University Hostel Management System Module
 
         int hostelModule;
 
