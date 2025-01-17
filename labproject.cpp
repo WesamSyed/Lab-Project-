@@ -111,8 +111,8 @@ int main() {
         int attendanceModule;
 
         cout << "\n--- UOL Student Attendance System ---" << endl;
-        cout << "1. Mark Attendance" << endl;
-        cout << "2. View UOL Student Attendance Record" << endl;
+        cout << "1. Mark Attendance of Section-O" << endl;
+        cout << "2. View UOL Student Attendance Record of BsCS Section-O" << endl;
         cout << "Choose an option (1 or 2): ";
         cin >> attendanceModule;
 
@@ -122,7 +122,7 @@ int main() {
             cin >> studentName;
             cout << "Attendance for " << studentName << " has been marked as present." << endl;
         } else if (attendanceModule == 2) {
-            cout << "Attendance Record:\n Wesam = Present\n Shamaim = Absent\n Meerab = Present \n Maryam = Present \n Faizan = Present\n Rehan = Leave \n Talha = Left the Uni \n Hamdan = Present \n Rida = Absent " << endl;
+            cout << "Attendance Record of Section-O:\n Wesam = Present\n Shamaim = Present \n Meerab = Leave \n Maryam = Present \n Faizan = Present\n Rehan = Leave \n Talha = Left the Uni \n Hamdan = Present \n Rida = Absent " << endl;
         } else {
             cout << "Invalid option." << endl;
         }
@@ -171,7 +171,7 @@ int main() {
             cin >> roomNumber;
             cout << "Student " << studentName << " has been assigned to room " << roomNumber << "." << endl;
         } else if (hostelModule == 2) {
-            cout << "Available Rooms:\nRoom 101 - 2 beds available\nRoom 102 - 1 bed available\nRoom 103 - Fully occupied" << endl;
+            cout << "Available Rooms:\n Room 10 on First Floor with 2 beds available\n Room 2 on Second Floor with 1 bed is available\n Room 03 on Ground Floor is Fully occupied" << endl;
         } else {
             cout << "Invalid option." << endl;
         }
