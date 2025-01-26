@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 int main() {
 
     // Admin credentials
@@ -66,7 +65,7 @@ int main() {
         short totalMarks = 100;
         int totalApplicants = 5;
 
-        // Use of For Loop to process multiple student applications
+        // Use of For-Loop to process multiple student applications
         
         for (int i = 1; i <= totalApplicants; i++) {
             cout << "\n--- University of Lahore Medical Admission Form (Student " << i << ") ---" << endl;
