@@ -68,7 +68,7 @@ int main() {
         // Use of For-Loop to process multiple student applications
         
         for (int i = 1; i <= totalApplicants; i++) {
-            cout << "\n--- University of Lahore Medical Admission Form (Student " << i << ") ---" << endl;
+            cout << "\n--- University of Lahore Admission Form (Student " << i << ") ---" << endl;
 
             cout << "Enter Full Name: ";
             cin >> studentName;
@@ -81,7 +81,7 @@ int main() {
 
             percentage = (marks * 100.0) / totalMarks;
 
-            cout << "\nAvailable Medical Programs at UOL:" << endl;
+            cout << "\nAvailable Programs at UOL:" << endl;
             cout << "1. MBBS (Bachelor of Medicine, Bachelor of Surgery)" << endl;
             cout << "2. DPT (Doctor of physiotherapy)" << endl;
             cout << "Please select a program by entering 1 or 2: ";
@@ -116,7 +116,7 @@ int main() {
             }
         }
 
-        cout << "\n--- All applications processed for UOL Medical Admissions ---" << endl;
+        cout << "\n--- All applications processed for UOL Admissions ---" << endl;
 
     } else if (userChoice == 3) {
 
